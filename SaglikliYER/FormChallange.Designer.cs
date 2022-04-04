@@ -35,10 +35,6 @@ namespace SaglikliYER
             this.btnCongratulations = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
             this.btnChallange = new System.Windows.Forms.Button();
@@ -117,39 +113,15 @@ namespace SaglikliYER
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Refresh";
             // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Weight";
-            this.columnHeader10.Width = 99;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Days";
-            this.columnHeader9.Width = 79;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Total Calorie";
-            this.columnHeader8.Width = 117;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Surname";
-            this.columnHeader7.Width = 97;
-            // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Name";
+            this.columnHeader6.Text = "Email";
             this.columnHeader6.Width = 83;
             // 
             // listView2
             // 
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10});
+            this.columnHeader6});
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(6, 21);
             this.listView2.Name = "listView2";
@@ -269,10 +241,6 @@ namespace SaglikliYER
         private System.Windows.Forms.Button btnCongratulations;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button btnChallange;

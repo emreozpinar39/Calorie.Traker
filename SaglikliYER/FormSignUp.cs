@@ -40,6 +40,11 @@ namespace SaglikliYER
                     bool sonuc = userService.UserEmailIfExist(txtEmail.Text);
                     if (sonuc == true)
                     {
+                        if (!txtEmail.Text.Contains("@") || !txtEmail.Text.EndsWith(".com"))
+                        {
+                            MessageBox.Show("Please type a correct email.");
+                            return;
+                        }
                         passwordService.CheckPasswordText(txtPassword1.Text);
 
                         DUser dUser = new DUser();
