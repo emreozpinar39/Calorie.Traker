@@ -49,22 +49,16 @@ namespace YerNTier.BLL.Services
             }
             return meals;
         }
-
         void CheckMeal(Meal meal)
         {
-            if (string.IsNullOrWhiteSpace(meal.MealName) || string.IsNullOrWhiteSpace(meal.MealDate.ToString())
-                ) throw new Exception("Meal bilgileri eksik !!");
+            if (string.IsNullOrWhiteSpace(meal.MealName) || string.IsNullOrWhiteSpace(meal.MealDate.ToString())) throw new Exception("Meal bilgileri eksik !!");
         }
-
         //Meal gelen mealları kontrol eden method insert 
         public bool Insert(Meal meal)
         {
             CheckMeal(meal);
             return mealRepository.Insert(meal);
         }
-
- 
-
         //Meal tipinde gelen mealları kontrol eden delete methodu 
         public bool CDelete(Meal _meal)
         {
@@ -75,15 +69,12 @@ namespace YerNTier.BLL.Services
             }
             else throw new Exception("UserId kontrol ediniz");
         }
-
-        //gelen int userID>0 kontrol eden listeleme methodları 3 tane 
         public List<Meal> GetDailyByUserID(int _userID)
         {
             if (_userID > 0)
                 return mealRepository.GetMealsForDailyByUserId(_userID);
             else throw new Exception("Liste hatalı");
         }
-
         public List<Meal> GetWeeklyByUserID(int _userID)
         {
             if (_userID > 0)
@@ -96,8 +87,6 @@ namespace YerNTier.BLL.Services
                 return mealRepository.GetMealsForMonthByUserId(_userID);
             else throw new Exception("Liste hatalı");
         }
-   
-      
         public List<Meal> GetByDate(DateTime date,int _userID)
         {
             if (_userID > 0)

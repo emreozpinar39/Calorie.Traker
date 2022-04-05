@@ -25,12 +25,10 @@ namespace SaglikliYER
             userDatailsServece = new UserDatailsServece();
             passwordService = new PasswordService();
         }
-
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
@@ -139,13 +137,11 @@ namespace SaglikliYER
             }
             
         }
-
         private void btnQuestions_Click(object sender, EventArgs e)
         {
             MessageBox.Show("En az 6 karakter." +
                     "En az bir Rakam, bir Büyük Harf ve Küçük Harf Kullanın !");
         }
-
         private void txtPassword1_TextChanged(object sender, EventArgs e)
         {
             lblDerece.Text = PassLevel(txtPassword1.Text);
@@ -157,7 +153,6 @@ namespace SaglikliYER
             else if (PassLevel(txtPassword1.Text) == "Güçlü Şifre..")
                 lblDerece.ForeColor = Color.Green;
         }
-        
         private void btnShowPass_Click(object sender, EventArgs e)
         {
             if (count == true)

@@ -70,7 +70,7 @@ namespace YerNTier.BLL.Services
         public bool Delete(Food _food)
         {
             
-            if (_food.FoodID > 0||_food.CategoryID>0 || CheckFood(_food)==true)
+            if (_food !=null || CheckFood(_food)==true)
             {
                 return foodRepository.Delete(_food);
             }
@@ -79,7 +79,7 @@ namespace YerNTier.BLL.Services
         }
         public bool InsertFoodCategory(FoodCategory _foodCategory)
         {
-            if (_foodCategory.Description == null || _foodCategory.CategoryName == null)
+            if (_foodCategory.Description == "" || _foodCategory.CategoryName == "")
             {
                 throw new Exception("hata insert food category");
             }

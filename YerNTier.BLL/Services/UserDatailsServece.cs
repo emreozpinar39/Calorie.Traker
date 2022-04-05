@@ -29,8 +29,8 @@ namespace YerNTier.BLL.Services
      
         void CheckUserDetails(UserDetail _userDetail)
         {
-            if (_userDetail.UserName == null || _userDetail.SurName == null || _userDetail.Height == 0 || _userDetail.Weight == 0 || _userDetail.BirthDate == null)
-                throw new Exception("UserDetail Hatası");
+            if ( _userDetail.BirthDate < DateTime.Now.AddYears(-12))
+                throw new Exception("Uygulama 12 yaşından büyükler içindir");
         }
         public UserDetail GetUserDetailByID(int _userID)
         {

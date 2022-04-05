@@ -64,7 +64,6 @@ namespace SaglikliYER
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnGun_Click(object sender, EventArgs e)
         {
             try
@@ -79,7 +78,6 @@ namespace SaglikliYER
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnHafta_Click(object sender, EventArgs e)
         {
             try
@@ -94,7 +92,6 @@ namespace SaglikliYER
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void btnAy_Click(object sender, EventArgs e)
         {
             try
