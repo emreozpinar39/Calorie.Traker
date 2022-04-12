@@ -76,7 +76,7 @@ namespace YerNTier.DAL.Repositories
     
         public List<Meal> GetByDate(DateTime date,int _userID)
         {
-            return context.Meals.Where(a => a.MealDate.Day == date.Day && a.DUserID==_userID).ToList();
+            return context.Meals.Where(a => a.MealDate.Day == date.Day && a.MealDate.Month==date.Month && a.MealDate.Year == date.Year && a.DUserID==_userID).ToList();
         }
         public Meal AddFoodsToMeals(Meal meal, EatenFood _Efood)
         {
